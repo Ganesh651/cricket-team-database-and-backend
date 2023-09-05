@@ -1,0 +1,24 @@
+###
+POST http://localhost:4000/player
+Content-Type: application/json
+
+   {"playerName":"Ashwin","jerseyNumber":81,"role":"All-rounder"}
+###
+
+GET http://localhost:4000/players 
+###
+
+GET http://localhost:4000/players/1/
+
+###
+PUT http://localhost:4000/players/6
+Content-Type: application/json
+
+{
+  "playerName": "Pant",
+  "jerseyNumber": 119,
+  "role": "Batter"
+}
+###
+
+DELETE http://localhost:4000/players/21
